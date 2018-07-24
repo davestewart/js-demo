@@ -1,3 +1,5 @@
+<p align="center"><img src="src/app/assets/logo.png"></p>
+
 # Vue Demo Framework
 
 > A starter template to demo JS libs
@@ -9,19 +11,22 @@ Layout
 - Navigation
 - Pages
 - Attractive design
+- Example logo + favicon
 
 UI components
 
-- Modal
-- Icon
 - Input
 - Select
+- Modal
 - Table
+- Icon
 
 Functionality
 
 - Built on Vue
 - Code Sandbox integration
+- Routing
+- Vuex
 
 Libraries
 
