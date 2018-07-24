@@ -2,7 +2,7 @@
 
   <div class="content">
     <div class="logo">
-      <img src="../assets/logo.png" width="450">
+      <img src="../../core/assets/logo.png" width="450">
     </div>
 
     <h4 class="title is-4">Introduction</h4>
@@ -22,17 +22,14 @@
     <h4 class="title is-4">Folder structure</h4>
 
     <p>The example code (for each feature or example) can be found in the <code>src/examples/</code> folder:</p>
-    <pre style="font-size: 12px">
+    <pre>
 +- src
     +- examples
-        +- api
-        +- large
-        +- typical
+        +- ...
     </pre>
 
     <p>You can manually navigate to the folders, or as mentioned above, use the edit buttons to jump directly to the
       file.</p>
-
 
     <h4 class="title is-4">Using Vue Devtools</h4>
 
@@ -49,5 +46,6 @@
   .logo {
     text-align: center;
     margin-top: 20px;
+    margin-right: 10%;
   }
 </style>

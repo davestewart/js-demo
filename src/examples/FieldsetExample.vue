@@ -4,7 +4,7 @@
     <div class="content">
       <h2 class="title is-2">Fieldset example</h2>
       <blockquote>
-        <p>Demo uses manually-created computed properties, accessing the store via getters and actions</p>
+        <p>This is a fieldset example</p>
         <edit-code src="examples/large/VueComputedFull.vue"/>
         <edit-code src="examples/large/vuex/vuex-full.js"/>
       </blockquote>

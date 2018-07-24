@@ -100,13 +100,16 @@ a {
 
 .content pre,
 pre {
-  margin: 1em;
+  margin: 1em 0;
   padding: 1em 1.5em;
   border-radius: 4px;
   background: #f8f8f8;
-  color: black;
+  color: darken($text-color, 10%);
   font-smoothing: antialiased;
   font-family: Roboto Mono, Monaco, Courier New, courier, monospace;
+  font-size: 0.75em;
+  line-height: 1.4em;
+  overflow-x: auto;
 }
 
 .columns {

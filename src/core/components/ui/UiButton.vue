@@ -4,7 +4,7 @@
       <button class="button is-small"
               type="button"
               v-bind="$attrs"
-              @click="$emit('click')">{{ label }}</button>
+              @click="$emit('click')"><slot>{{ label }}</slot></button>
     </div>
   </div>
 </template>

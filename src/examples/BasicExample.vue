@@ -5,18 +5,18 @@
     <div class="content">
       <h2 class="title is-2">Basic example</h2>
       <blockquote>
-        <p>Store accessors provide global read / write access to the store</p>
+        <p>This is a basic example</p>
         <edit-code src="examples/api/Accessors.vue"/>
         <edit-code src="examples/api/vuex/module.js"/>
-        <view-docs src="api/accessors"/>
+        <view-docs src="features"/>
       </blockquote>
     </div>
 
     <div class="content">
-      <p>This is the example module store:</p>
+      <p>This is some random data:</p>
       <pre>{{ $data }}</pre>
 
-      <p>You can call store accessors from anywhere, and they will update the view. In the console, try:</p>
+      <p>This is some random code:</p>
       <pre>store.get('module')
 store.set('module/object', {x: {y: {z: 100}}})
 store.copy('module/object@x.y.z')

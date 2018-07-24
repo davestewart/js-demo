@@ -1,12 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import config from '../../app/state/config'
-import routes from '../../app/router'
-import { route } from '../../app/router'
-
+import config from '../../app/config/site'
+import routes from '../../app/config/routes'
 
 Vue.use(Router)
+
+export function route (path, component) {
+  return { path, component }
+}
+
+export function group (path, routes) {
+  return routes.map(route => {
+    route.path = path.trimEnd('/') + '/' + route.path.trimStart('/')
+    return route
+  })
+}
 
 function updateTitle () {
   const route = location.hash

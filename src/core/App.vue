@@ -1,7 +1,7 @@
 <template>
-  <div id="demo">
-    <sidebar/>
-    <main>
+  <div id="demo" class="container">
+    <sidebar />
+    <main class="main">
       <router-view/>
     </main>
   </div>
@@ -20,7 +20,7 @@ export default {
 
   data () {
     return {
-      msg: 'Welcome to Vue'
+      msg: 'JS Demo'
     }
   }
 }

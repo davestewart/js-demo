@@ -2,18 +2,20 @@
 
   <aside class="sidebar">
 
-    <h1>{{ $config.name }}</h1>
+    <h1>{{ $site.name }}</h1>
 
     <p class="menu-label">Intro</p>
     <ul class="menu-list">
       <li><router-link to="/home">Home</router-link></li>
+      <li><router-link to="/components">Components</router-link></li>
+      <li><router-link to="/page">Page</router-link></li>
     </ul>
 
     <p class="menu-label">Examples</p>
     <ul class="menu-list">
-      <li><router-link class="code" to="/basic">Basic</router-link></li>
-      <li><router-link class="code" to="/component">Component</router-link></li>
-      <li><router-link class="code" to="/fieldset">Fieldset</router-link></li>
+      <li><router-link class="code" to="/api/basic">Basic</router-link></li>
+      <li><router-link class="code" to="/api/component">Component</router-link></li>
+      <li><router-link class="code" to="/api/fieldset">Fieldset</router-link></li>
     </ul>
 
     <!--

@@ -4,7 +4,7 @@
     <div class="content">
       <h2 class="title is-2">Component example</h2>
       <blockquote>
-        <p>Demo uses one and two-way computed properties, state, getters and commits, object and array syntax</p>
+        <p>This is a component example</p>
         <edit-code src="examples/typical/VueComputed.vue"/>
         <edit-code src="examples/typical/vuex/vuex-light.js"/>
       </blockquote>

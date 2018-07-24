@@ -5,7 +5,6 @@
 </template>
 
 <script>
- import config from '../../../app/state/config'
   export default {
     props: {
       src: String,
@@ -13,7 +12,7 @@
 
     computed: {
       url () {
-        return `${config.docs}/#/${this.src}`
+        return `${this.$site.docs}#${this.src}`
       }
     },
 
