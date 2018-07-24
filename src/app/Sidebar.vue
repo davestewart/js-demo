@@ -2,7 +2,7 @@
 
   <aside class="sidebar">
 
-    <h1>{{ $site.name }}</h1>
+    <h1><span class="logo"></span>{{ $site.name }}</h1>
 
     <p class="menu-label">Intro</p>
     <ul class="menu-list">
