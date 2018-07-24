@@ -9,8 +9,9 @@ import router from './core/router/index'
 // ui
 import './core/components'
 
-// styles
+// assets
 import './core/styles/index.scss'
+require('./core/assets/favicon.png')
 
 // google analytics
 import config from './app/config/site'
