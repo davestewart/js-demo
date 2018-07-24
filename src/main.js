@@ -14,7 +14,7 @@ import './core/styles/index.scss'
 
 // google analytics
 import config from './app/state/config'
-import track from './core/assets/ga'
+import track from './core/vendor/ga'
 if (config.ga) {
   track(config.ga)
 }
