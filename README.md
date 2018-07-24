@@ -39,19 +39,25 @@ Libraries
 
 ## Demo
 
-Visit:
+Editable demo:
 
-- https://js-demo.netlify.com/
+- [codesandbox.io/s/github/davestewart/js-demo](https://codesandbox.io/s/github/davestewart/js-demo)
 
-## Setup
+Live site:
 
-Install and run:
+- [js-demo.netlify.com](https://js-demo.netlify.com)
+
+## Usage
+
+Clone to the `demo/` folder of your local repository.
+
+Then, install and run:
 
 ```bash
 npm install
 npm run dev
 ```
 
-View at [http://localhost:8080](http://localhost:8080).
+View at [http://localhost:8080](http://localhost:8080)
 
 
