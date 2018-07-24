@@ -3,12 +3,12 @@
 body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 15px;
-  color: #34495e;
+  color: $text-color;
 }
 
 #app {
   text-align: center;
-  color: #2c3e50;
+  color: $body-color;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5 {
 .content {
   h1, h2, h3, h4, h5,
   strong {
-    color: #2c3e50;
+    color: $body-color;
     -webkit-font-smoothing: auto;
   }
 
@@ -89,7 +89,7 @@ li {
 }
 
 a {
-  color: #25afaf;
+  color: $primary-color;
 }
 
 

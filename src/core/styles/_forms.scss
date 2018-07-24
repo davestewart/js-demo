@@ -58,10 +58,10 @@ fieldset {
     margin-right: .5em;
   }
 
-  background: #25afaf;
+  background: $primary-color;
 
   &:hover {
-    background: lighten(#25afaf, 5%);
+    background: lighten($primary-color, 5%);
   }
 }
 
