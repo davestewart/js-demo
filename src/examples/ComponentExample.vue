@@ -2,7 +2,7 @@
   <article>
 
     <div class="content">
-      <h2 class="title is-2"><span>Typical component: </span>Vue computed</h2>
+      <h2 class="title is-2">Component example</h2>
       <blockquote>
         <p>Demo uses one and two-way computed properties, state, getters and commits, object and array syntax</p>
         <edit-code src="examples/typical/VueComputed.vue"/>

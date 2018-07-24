@@ -2,7 +2,7 @@
 
   <div class="content">
     <div class="logo">
-      <img src="../assets/logo.png" width="">
+      <img src="../assets/logo.png" width="450">
     </div>
 
     <h4 class="title is-4">Introduction</h4>
@@ -48,6 +48,6 @@
 <style>
   .logo {
     text-align: center;
-    padding: 40px 20px;
+    margin-top: 20px;
   }
 </style>

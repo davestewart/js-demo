@@ -2,7 +2,7 @@
   <article>
 
     <div class="content">
-      <h2 class="title is-2"><span>Large component</span>Vue computed (full)</h2>
+      <h2 class="title is-2">Fieldset example</h2>
       <blockquote>
         <p>Demo uses manually-created computed properties, accessing the store via getters and actions</p>
         <edit-code src="examples/large/VueComputedFull.vue"/>

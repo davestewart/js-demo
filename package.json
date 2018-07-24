@@ -1,6 +1,6 @@
 {
-  "name": "vue-demo-framework",
-  "description": "Vue Demo Framework - A starter template to demo JS libs",
+  "name": "js-demo",
+  "description": "JS Demo - A starter project to demo JS libraries",
   "version": "1.0.0",
   "author": "Dave Stewart",
   "scripts": {

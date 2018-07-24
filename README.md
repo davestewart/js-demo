@@ -1,8 +1,8 @@
-<p align="center"><img src="src/app/assets/logo.png"></p>
+<p align="center"><img src="src/app/assets/logo.png" width="60%"></p>
 
-# Vue Demo Framework
+# js demo
 
-> A starter template to demo JS libs
+> A starter project to demo JS libraries
 
 ## Features
 
@@ -10,6 +10,7 @@ Layout
 
 - Navigation
 - Pages
+- Info section
 - Attractive design
 - Example logo + favicon
 
@@ -46,3 +47,5 @@ npm run dev
 ```
 
 View at [http://localhost:8080](http://localhost:8080).
+
+

@@ -3,7 +3,7 @@
   <article>
 
     <div class="content">
-      <h2 class="title is-2">API: Store accessors</h2>
+      <h2 class="title is-2">Basic example</h2>
       <blockquote>
         <p>Store accessors provide global read / write access to the store</p>
         <edit-code src="examples/api/Accessors.vue"/>
