@@ -1,9 +1,10 @@
 <template>
 
   <div class="content">
-    <h2 class="title is-2">Page example</h2>
+    <h2 class="title is-2">Formatting example</h2>
 
-    <p>This is an example page. It's here to demonstrate the formatting.</p>
+    <p>This is an example page.</p>
+    <p>Copy and paste this to start with a new page.</p>
 
     <h3>This is an H3</h3>
 

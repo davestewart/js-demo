@@ -2,8 +2,8 @@ import { group, route } from '../../core/router'
 
 // pages
 import Home from '../pages/Home'
+import Formatting from '../pages/Formatting'
 import Components from '../pages/Components'
-import Page from '../pages/Page'
 
 // examples
 import Basic from '../../examples/BasicExample'
@@ -14,7 +14,7 @@ import Fieldset from '../../examples/FieldsetExample'
 export default [
   // pages
   route('/home', Home),
-  route('/page', Page),
+  route('/formatting', Formatting),
   route('/components', Components),
 
   // basics

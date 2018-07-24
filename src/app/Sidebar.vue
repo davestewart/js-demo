@@ -7,8 +7,8 @@
     <p class="menu-label">Intro</p>
     <ul class="menu-list">
       <li><router-link to="/home">Home</router-link></li>
+      <li><router-link to="/formatting">Formatting</router-link></li>
       <li><router-link to="/components">Components</router-link></li>
-      <li><router-link to="/page">Page</router-link></li>
     </ul>
 
     <p class="menu-label">Examples</p>
