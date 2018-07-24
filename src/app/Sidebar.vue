@@ -17,27 +17,25 @@
     </ul>
 
     <!--
-    <p class="menu-label">Code comparisons</p>
+    <p class="menu-label">Code</p>
     <ul class="menu-list">
       <li><router-link to="/code">Overview</router-link></li>
+
       <li>
-        <router-link to="/code/typical" class="is-parent">Typical component</router-link>
+        <router-link to="/code/foo" class="is-parent">Foo Features</router-link>
         <ul class="menu-list">
-          <li><router-link class="code" to="/code/typical/pathify">Pathify</router-link></li>
-          <li><router-link class="code" to="/code/typical/vuex-helpers">Vuex helpers (light)</router-link></li>
-          <li><router-link class="code" to="/code/typical/vue-computed">Vue computed (light)</router-link></li>
+          <li><router-link class="code" to="/code/foo/feature-1">Feature 1</router-link></li>
+          <li><router-link class="code" to="/code/foo/feature-2">Feature 2</router-link></li>
+          <li><router-link class="code" to="/code/foo/feature-3">Feature 3</router-link></li>
         </ul>
       </li>
 
       <li>
-        <router-link to="/code/large" class="is-parent">Large component</router-link>
+        <router-link to="/code/bar" class="is-parent">Bar Features</router-link>
         <ul class="menu-list">
-          <li><router-link class="code" to="/code/large/pathify-implicit">Pathify (implicit)</router-link></li>
-          <li><router-link class="code" to="/code/large/pathify-explicit">Pathify (explicit)</router-link></li>
-          <li><router-link class="code" to="/code/large/vuex-helpers-light">Vuex helpers (light)</router-link></li>
-          <li><router-link class="code" to="/code/large/vuex-helpers-full">Vuex helpers (full)</router-link></li>
-          <li><router-link class="code" to="/code/large/vue-computed-light">Vue computed (light)</router-link></li>
-          <li><router-link class="code" to="/code/large/vue-computed-full">Vue computed (full)</router-link></li>
+          <li><router-link class="code" to="/code/bar/feature-1">Feature 1</router-link></li>
+          <li><router-link class="code" to="/code/bar/feature-2">Feature 2</router-link></li>
+          <li><router-link class="code" to="/code/bar/feature-3">Feature 3</router-link></li>
         </ul>
       </li>
     </ul>
