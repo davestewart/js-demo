@@ -24,6 +24,8 @@ Vue.config.productionTip = false
 Vue.use(VueMarkdown);
 Vue.component('vue-markdown', VueMarkdown)
 
+Vue.use(Vue => Vue.prototype.$config = config)
+
 window.app = new Vue({
   el: '#demo',
   router,

@@ -2,7 +2,7 @@
 
   <aside class="sidebar">
 
-    <h1>{{ name }}</h1>
+    <h1>{{ $config.name }}</h1>
 
     <p class="menu-label">Intro</p>
     <ul class="menu-list">
