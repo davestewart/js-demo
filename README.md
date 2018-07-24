@@ -37,6 +37,12 @@ Libraries
 - Axios
 - Bulma
 
+## Demo
+
+Visit:
+
+- https://js-demo.netlify.com/
+
 ## Setup
 
 Install and run:
