@@ -1,17 +1,27 @@
-
 .home {
-  margin-top: -50px;
 
-  font: $title-font;
+  header {
+    position: relative;
+    top: -50px;
 
-  .logo {
-    margin-top: 20px;
-    margin-right: 10%;
+    @include tablet {
+      left: -10%;
+    }
 
     img {
       display: block;
-      margin: auto;
+      margin: 20px auto;
     }
+
+    h1 {
+      font: $title-font;
+      font-weight: 200;
+      letter-spacing: .09em;
+      font-size: 55px;
+      text-align: center;
+      margin-top: .5em !important;
+    }
+
   }
 
 }
