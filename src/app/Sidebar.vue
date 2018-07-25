@@ -1,6 +1,6 @@
 <template>
 
-  <aside class="sidebar">
+  <div class="sidebar">
 
     <h1><span class="logo"></span>{{ $site.name }}</h1>
 
@@ -43,6 +43,6 @@
     </ul>
     -->
 
-  </aside>
+  </div>
 
 </template>

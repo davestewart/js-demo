@@ -1,6 +1,8 @@
 <template>
   <div id="demo" class="container">
-    <sidebar />
+    <aside>
+      <sidebar />
+    </aside>
     <main class="main">
       <router-view/>
     </main>

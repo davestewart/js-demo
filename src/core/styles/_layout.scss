@@ -15,8 +15,9 @@ body {
 aside {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 200px;
   padding: 20px;
+  padding-top: 60px;
 
   @include tablet {
     width: 250px;
@@ -28,6 +29,6 @@ main {
   position: relative;
   flex-direction: column;
   flex: 1;
-  padding: 35px 20px 15vh 20px;
+  padding: 75px 20px 15vh 20px;
   min-width: 0;
 }

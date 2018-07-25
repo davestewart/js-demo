@@ -1,9 +1,14 @@
 <template>
 
-  <div class="content">
-    <div class="logo">
-      <img src="../../core/assets/logo.png" width="450">
-    </div>
+  <div class="content home">
+
+    <header class="banner">
+      <img src="../../core/assets/logo-image.png" width="350">
+      <img src="../../core/assets/logo-text.png" width="350">
+      <!--
+      <h1>js demo</h1>
+      -->
+    </header>
 
     <h4 class="title is-4">Introduction</h4>
     <p>This demo is intended to illustrate both API and real-world usage.</p>
@@ -41,11 +46,3 @@
   </div>
 
 </template>
-
-<style>
-  .logo {
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 10%;
-  }
-</style>

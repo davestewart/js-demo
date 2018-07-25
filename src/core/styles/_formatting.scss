@@ -25,24 +25,27 @@ h1, h2, h3, h4, h5 {
 }
 
 .content {
-  h1, h2, h3, h4, h5,
-  strong {
-    color: $body-color;
-    -webkit-font-smoothing: auto;
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
+  }
+
+  > {
+    h1:first-child,
+    h2:first-child,
+    h3:first-child,
+    h4:first-child {
+      margin-top: 0;
+    }
   }
 
   h3 {
     margin-top: 2em
   }
-}
 
-.content > {
-  h1:first-child,
-  h2:first-child,
-  h3:first-child,
-  h4:first-child {
-    margin-top: 0;
+  strong {
+    -webkit-font-smoothing: auto;
   }
+
 }
 
 h2 span {
@@ -55,7 +58,6 @@ h2 span {
 .title + .title {
   margin-top: 0.5em;
 }
-
 
 // navigation
 .indent, li {
@@ -91,7 +93,6 @@ li {
 a {
   color: $primary-color;
 }
-
 
 * {
   text-align: left;
