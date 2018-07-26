@@ -46,20 +46,38 @@
       above the preview pane to do this, then use Vue Devtools as normal.</p>
     <p>Note that you will still be able to edit the code and see the results! CodeSandbox is that cool :)</p>
 
-    <h2>Demos</h2>
+    <h2>Resources</h2>
     <template v-if="$site.demo">
-      <p>You can view the site on:</p>
+      <p>The site repository is here:</p>
       <ul>
-        <li><a :href="$site.demo" target="_blank">{{ $site.demo }}</a></li>
+        <li><a :href="$site.repo" target="_blank">{{ url($site.repo) }}</a></li>
       </ul>
     </template>
+
+    <template v-if="$site.demo">
+      <p>You can view the demo site on:</p>
+      <ul>
+        <li><a :href="$site.demo" target="_blank">{{ url($site.demo) }}</a></li>
+      </ul>
+    </template>
+
     <template v-if="$site.cs">
       <p>You can edit the site live on:</p>
       <ul>
-        <li><a :href="$site.cs" target="_blank">{{ $site.cs }}</a></li>
+        <li><a :href="$site.cs" target="_blank">{{ url($site.cs) }}</a></li>
       </ul>
     </template>
 
   </div>
 
 </template>
+
+<script>
+export default {
+  methods: {
+    url (value) {
+      return String(value).replace(/https?:\/\//, '')
+    }
+  }
+}
+</script>
