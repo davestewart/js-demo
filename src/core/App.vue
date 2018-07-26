@@ -1,16 +1,18 @@
 <template>
   <div id="demo" class="container">
     <aside>
-      <sidebar />
+      <div class="sidebar-container">
+        <sidebar />
+      </div>
     </aside>
     <main class="main">
-      <router-view/>
+      <router-view :key="$route.path"/>
     </main>
   </div>
 </template>
 
 <script>
-import Sidebar from '../app/Sidebar'
+import Sidebar from './components/sidebar/Sidebar'
 import Home from '../app/pages/Home'
 
 export default {

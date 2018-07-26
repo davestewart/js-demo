@@ -12,18 +12,34 @@ body {
 aside {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
 }
 
-aside, .sidebar {
-  width: 200px;
-  @include tablet {
-    width: 250px;
-  }
+.sidebar-container {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
 }
 
 .sidebar {
-  padding-left: 20px;
+  position: relative;
+  padding-top: 60px;
+  height: 100%;
+  right: -17px;
+  padding-right: 17px;
+  overflow-y: scroll;
+
+  padding-left: 0;
+  @include tablet {
+    padding-left: 60px;
+  }
+}
+
+aside,
+.sidebar-container {
+  width: 230px;
+  @include tablet {
+    width: 290px;
+  }
 }
 
 main {
