@@ -1,4 +1,5 @@
-<p align="center"><img src="src/app/assets/logo.png" width="60%"></p>
+<p align="center"><img src="src/core/assets/logo-image.png" width="60%"></p>
+<p align="center"><img src="src/core/assets/logo-text.png" width="60%"></p>
 
 # js demo
 
