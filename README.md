@@ -22,20 +22,27 @@ UI components
 - Table
 - Icon
 
+Configuration
+
+- Single [navigation / routes](https://github.com/davestewart/js-demo/blob/master/src/app/config/navgation.js) configuration file
+- Single [site](https://github.com/davestewart/js-demo/blob/master/src/app/config/site.js) configuration file
+- Store [already set up](https://github.com/davestewart/js-demo/blob/master/src/app/data/store.js)
+- Various [sample pages](https://github.com/davestewart/js-demo/tree/master/src/app/pages) ready to go
+
 Functionality
 
 - Built on Vue
-- Code Sandbox integration
+- [CodeSandbox](https://codesandbox.io/) integration
 - Routing
 - Vuex
 
 Libraries
 
-- Vue
-- Vuex
-- Vue Router
-- Axios
-- Bulma
+- [Vue](https://vuejs.org/)
+- [Vuex](https://vuex.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [Axios](https://github.com/axios/axios)
+- [Bulma](https://bulma.io/)
 
 ## Demo
 

@@ -1,4 +1,4 @@
-// helpers
+// helpers; list, page, code
 import { list, page, code } from '../../core/router/helpers'
 
 // pages
@@ -12,7 +12,7 @@ import Basic from '../../examples/BasicExample'
 import Component from '../../examples/ComponentExample'
 import Fieldset from '../../examples/FieldsetExample'
 
-// export
+// this section builds sidebar and routes
 export default [
   list('', 'Intro', [
     page('home', 'Home', Home),
@@ -32,11 +32,12 @@ export default [
       code('feature-2', 'Feature 2', Page),
       code('feature-3', 'Feature 3', Page),
     ])
-  ])
+  ]),
+  // uncomment below to see how the navigation builder works...
   /*
   list('test', 'Test', [
     page('home', 'Home', Page),
-    list('foo', 'Foo Label', [
+    list('foo', [ // this list has no label, but it does supply a path
       code('basic', 'Basic', Page),
       code('component', 'Component', Page),
       code('fieldset', 'Fieldset', Page),
