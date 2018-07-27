@@ -1,7 +1,7 @@
 <template>
 
   <div class="content">
-    <h2 class="title is-2">Components</h2>
+    <h2>Components</h2>
 
     <p>This page demonstrates some of the components:</p>
 

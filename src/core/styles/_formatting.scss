@@ -26,12 +26,18 @@ h1, h2, h3, h4, h5 {
     font-weight: normal;
   }
 
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 2rem; }
+  h4 { font-size: 1.5rem; }
+  h5 { font-size: 1.25rem; }
+
   h1:not(:first-child),
   h2:not(:first-child),
   h3:not(:first-child),
   h4:not(:first-child),
   h5:not(:first-child) {
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
 
   > {
