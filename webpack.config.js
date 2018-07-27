@@ -85,17 +85,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$':       'vue/dist/vue.esm.js',
-      'vuex-pathify':'vuex-pathify/src/main.js',
-      /*
       '@':          resolve(''),
-      'assets':     resolve('assets'),
-      'store':      resolve('store'),
-      'examples':   resolve('examples'),
-      'views':      resolve('views'),
-      'pages':      resolve('views/pages'),
-      'components': resolve('views/components'),
-      */
+      'vue$':       'vue/dist/vue.esm.js',
+      // 'vuex-pathify':'vuex-pathify/src/main.js',
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
@@ -110,14 +102,14 @@ module.exports = {
   devtool: '#eval-source-map'
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (/^production\b/.test(process.env.NODE_ENV)) {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new CopyWebpackPlugin(['index.html'], { from: './', to: dist }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"'
+        NODE_ENV: '"' + process.env.NODE_ENV + '"'
       }
     }),
     new UglifyJsPlugin({
