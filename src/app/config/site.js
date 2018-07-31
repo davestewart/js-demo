@@ -1,3 +1,9 @@
+/**
+ * Config
+ *
+ * - update this file with your own information
+ * - remove any items that are not relevant
+ */
 export default {
   name: 'js demo',
   demo: 'https://js-demo.netlify.com',

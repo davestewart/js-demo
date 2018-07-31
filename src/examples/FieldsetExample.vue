@@ -2,7 +2,7 @@
   <article>
 
     <div class="content">
-      <h2>Fieldset example</h2>
+      <h1>Fieldset example</h1>
       <blockquote>
         <p>This is a fieldset example</p>
         <edit-code src="examples/large/VueComputedFull.vue"/>

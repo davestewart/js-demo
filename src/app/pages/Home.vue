@@ -14,7 +14,7 @@
     </header>
 
     <h3>Introduction</h3>
-    <p>This demo is intended to illustrate both API and real-world usage.</p>
+    <p>This demo is intended to be used as a starting point for your own project.</p>
 
     <h3>Running the examples</h3>
 
@@ -46,7 +46,7 @@
       above the preview pane to do this, then use Vue Devtools as normal.</p>
     <p>Note that you will still be able to edit the code and see the results! CodeSandbox is that cool :)</p>
 
-    <h2>Resources</h2>
+    <h3>Resources</h3>
     <template v-if="$site.demo">
       <p>The site repository is here:</p>
       <ul>

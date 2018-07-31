@@ -3,7 +3,7 @@
   <article>
 
     <div class="content">
-      <h2>Basic example</h2>
+      <h1>Basic example</h1>
       <blockquote>
         <p>This is a basic example</p>
         <edit-code src="examples/api/Accessors.vue"/>
@@ -17,7 +17,8 @@
       <pre>{{ $data }}</pre>
 
       <p>This is some random code:</p>
-      <pre>store.get('module')
+      <pre>
+store.get('module')
 store.set('module/object', {x: {y: {z: 100}}})
 store.copy('module/object@x.y.z')
 </pre>
@@ -27,13 +28,13 @@ store.copy('module/object@x.y.z')
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        value: '...',
-        copy: '...',
-      }
-    },
+export default {
+  data () {
+    return {
+      value: '...',
+      copy: '...',
+    }
+  },
 
-  }
+}
 </script>

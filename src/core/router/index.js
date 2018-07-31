@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { makeMenu, makeRoutes, route } from './helpers'
+
+// routes
+import { route } from './helpers'
+import { makeMenu, makeRoutes, afterRoute } from './services'
 
 // app config
-import config from '../../app/config/site'
 import navigation from '../../app/config/navgation'
 
 // build
@@ -19,23 +21,12 @@ const router = new Router({
   linkActiveClass: 'is-link-active',
   linkExactActiveClass: 'is-link-exact',
   routes: [
-    { path: '/', redirect:'/home' },
     ...routes,
     route('*', {template: '<div>Route not found</div>'}),
   ]
 })
 
-// title
-function updateTitle () {
-  const route = location.hash
-  const link = document.querySelector(`a[href="${route}"]`)
-  if (link) {
-    document.title = `${config.name} / ${link.innerText}`
-  }
-}
-
-router.afterEach(updateTitle)
-setTimeout(updateTitle)
+router.afterEach(afterRoute)
+setTimeout(afterRoute)
 
 export default router
-

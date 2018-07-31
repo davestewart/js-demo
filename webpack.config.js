@@ -85,7 +85,7 @@ module.exports = {
         test: /\.md$/,
         loader: 'vue-markdown-loader',
         options: {
-          wrapper: 'page-markdown',
+          wrapper: 'markdown-page',
         }
       }
     ]
@@ -109,14 +109,14 @@ module.exports = {
   devtool: '#eval-source-map'
 }
 
-if (/^production\b/.test(process.env.NODE_ENV)) {
+if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new CopyWebpackPlugin(['index.html'], { from: './', to: dist }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"' + process.env.NODE_ENV + '"'
+        NODE_ENV: '"production"'
       }
     }),
     new UglifyJsPlugin({

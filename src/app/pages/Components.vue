@@ -1,16 +1,27 @@
 <template>
 
   <div class="content">
-    <h2>Components</h2>
 
-    <p>This page demonstrates some of the components:</p>
+    <h1>Components</h1>
+
+    <p>The demo ships with some basic components.</p>
+
+    <h4>Forms</h4>
+
+    <p>There are some basic form controls:</p>
 
     <div class="controls field is-horizontal">
 
       <ui-input
-        label="Hello"
-        v-model="text"
+        label="Text"
         type="text"
+        v-model="text"
+      />
+
+      <ui-input
+        label="Numbers"
+        type="number"
+        v-model="number"
       />
 
       <ui-select label="Options"
@@ -29,6 +40,25 @@
     </div>
 
     <pre>{{ $data }}</pre>
+
+    <markdown>
+      #### Markdown
+
+      Aside from importing markdown files in `navigation.js`, you can also use markdown in Vue components via the `&lt;markdown&gt;` component:
+
+      ```html
+      &lt;markdown&gt;
+      Write your content here...
+      &lt;/markdown&gt;
+      ```
+
+      You can use any formatting **except** HTML tags, for example **bold**, *italic*, lists:
+
+      - foo
+      - bar
+      - baz
+    </markdown>
+
   </div>
 
 </template>
@@ -38,9 +68,15 @@ export default {
   data () {
     return {
       text: 'Hello World',
+      number: 100,
       option: 'two'
     }
-  },
-  methods: {}
+  }
 }
 </script>
+
+<style lang="scss" scoped>
+  /deep/ .field {
+    // width: 100px;
+  }
+</style>

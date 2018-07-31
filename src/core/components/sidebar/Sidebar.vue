@@ -10,6 +10,7 @@
 <script>
 
 import Vue from 'vue'
+import MenuList from './MenuList'
 import MenuGroup from './MenuGroup'
 
 import items from '../../../app/config/navgation'
@@ -19,7 +20,8 @@ Vue.component('menu-group', MenuGroup)
 export default {
 
   components: {
-    MenuGroup
+    MenuList,
+    MenuGroup,
   },
 
   data () {

@@ -11,9 +11,10 @@ Layout
 
 - Navigation
 - Pages
-- Info section
+- Markdown support
 - Attractive design
 - Example logo + favicon
+- Info section for examples
 
 UI components
 
@@ -29,6 +30,15 @@ Configuration
 - Single [site](https://github.com/davestewart/js-demo/blob/master/src/app/config/site.js) configuration file
 - Store [already set up](https://github.com/davestewart/js-demo/blob/master/src/app/data/store.js)
 - Various [sample pages](https://github.com/davestewart/js-demo/tree/master/src/app/pages) ready to go
+
+Integration / Links
+
+- Documentation
+- Demo site (recommends Netlify)
+- GitHub
+- Google Analytics
+- Code Sandbox
+
 
 Functionality
 

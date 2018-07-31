@@ -1,10 +1,10 @@
 // helpers; list, page, code
-import { list, page, code } from '../../core/router/helpers'
+import { route, redirect, list, page, code } from '../../core/router/helpers'
 
 // pages
 import Home from '../pages/Home'
-import Formatting from '../pages/Formatting'
 import Components from '../pages/Components'
+import Markdown from '../pages/Markdown.md'
 import Page from '../pages/Page'
 
 // examples
@@ -14,17 +14,25 @@ import Fieldset from '../../examples/FieldsetExample'
 
 // this section builds sidebar and routes
 export default [
-  list('', 'Intro', [
-    page('home', 'Home', Home),
-    page('formatting', 'Formatting', Formatting),
+  // route creates a route without creating a menu item
+  route('/', Home),
+
+  // list creates a list
+  list('', 'Features', [
+    // you can use page() to create items with no icon
+    page('markdown', 'Markdown', Markdown),
     page('components', 'Components', Components),
   ]),
-  list('api', 'Api', [
+
+  list('examples', 'Examples', [
+    // you can use code() to create items with an icon
     code('basic', 'Basic', Basic),
     code('component', 'Component', Component),
     code('fieldset', 'Fieldset', Fieldset),
   ]),
-  list('code', 'Code', [
+
+  // below is an example of nested routes
+  list('features', 'features', [
     page('overview', 'Overview', Page),
     page('foo', 'Foo Features', Page),
     list('foo', [
@@ -33,21 +41,4 @@ export default [
       code('feature-3', 'Feature 3', Page),
     ])
   ]),
-  // uncomment below to see how the navigation builder works...
-  /*
-  list('test', 'Test', [
-    page('home', 'Home', Page),
-    list('foo', [ // this list has no label, but it does supply a path
-      code('basic', 'Basic', Page),
-      code('component', 'Component', Page),
-      code('fieldset', 'Fieldset', Page),
-      page('this is a page', 'Some Page', Page),
-      list('test', 'Test', [
-        code('basic', 'Basic', Page),
-        code('component', 'Component', Page),
-        code('fieldset', 'Fieldset', Page),
-      ]),
-    ]),
-  ]),
-  */
 ]

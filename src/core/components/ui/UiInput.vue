@@ -36,6 +36,6 @@
 
 <style lang="scss" scoped>
   .ui-input {
-    min-width: 200px;
+    min-width: 50px;
   }
 </style>

@@ -2,7 +2,7 @@
   <article>
 
     <div class="content">
-      <h2>Component example</h2>
+      <h1>Component example</h1>
       <blockquote>
         <p>This is a component example</p>
         <edit-code src="examples/typical/VueComputed.vue"/>
