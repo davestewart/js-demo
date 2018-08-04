@@ -17,3 +17,10 @@
   }
 
 </script>
+
+<style scoped>
+  .control,
+  .field.ui-button {
+    display: inline-block;
+  }
+</style>
