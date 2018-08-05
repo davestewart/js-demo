@@ -4,12 +4,12 @@
 
 import path from 'path'
 import license from 'rollup-plugin-license'
+
 import commonjs from 'rollup-plugin-commonjs'
 import uglify from 'rollup-plugin-uglify'
 import buble from 'rollup-plugin-buble'
 
 import vue from 'rollup-plugin-vue'
-import image from 'rollup-plugin-image'
 import scss from 'rollup-plugin-scss'
 
 
@@ -41,14 +41,11 @@ const umd = {
         file: path.join(__dirname, 'banner.txt')
       },
     }),
-    image(),
-    scss({
-      output: function (styles, styleNodes) {
-        writeFileSync('bundle.css', styles)
-      }
-    }),
     vue(),
     commonjs(),
+    scss({
+      output: 'dist/styles.css'
+    }),
     buble(),
   ]
 }
