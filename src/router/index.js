@@ -1,17 +1,13 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-
 // routes
 import { route } from './helpers'
 import { afterRoute, makeMenu, makeRoutes } from './services'
 
 // build
-export default function (navigation) {
-  const menu = makeMenu(navigation)
+export default function (nav, Router) {
+  const menu = makeMenu(nav)
   const routes = makeRoutes(menu)
 
   // router
-  Vue.use(Router)
   const router = new Router({
     mode: window.location.href.includes('codesandbox')
       ? 'history'

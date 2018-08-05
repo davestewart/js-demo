@@ -10,6 +10,8 @@ export default {
     const item = context.props.item
     const label = h(MenuLabel, { props: { text: item.text } })
     const list = h(MenuList, { props: { items: item.items } })
-    return [label, list]
+    return item.text
+      ? [label, list]
+      : [list]
   }
 }

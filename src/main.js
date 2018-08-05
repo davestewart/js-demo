@@ -1,52 +1,77 @@
 import Vue from 'vue'
+import Router from 'vue-router'
+
+// plugins
 import VueMarkdown from 'vue-markdown/dist/vue-markdown'
 
 // assets
 import './styles/index.scss'
-import './assets/favicon.png'
-import './components'
 
-// app
+// components
 import App from './App.vue'
-import makeRouter from './router'
-import * as helpers from './router/helpers'
-import { item, route, redirect, list, page, code } from './router/helpers'
+import components from './components'
+import MenuGroup from './components/sidebar/MenuGroup'
 
-// config
+// services
 import track from './vendor/ga'
+import makeRouter from './router'
 
-// plugins
-Vue.use(VueMarkdown)
-Vue.component('vue-markdown', VueMarkdown)
+// helpers
+import { code, item, list, page, redirect, route } from './router/helpers'
 
-// export
-function demo (site = {}, menu = {}, store = {}) {
+// install
+function install (Vue, options, demo = false) {
+  // params
+  const { site, nav, store, router } = options
+
+  // devtools
+  Vue.config.devtools = true
+
+  // plugins
+  Vue.use(vue => vue.prototype.$site = site)
+  Vue.use(vue => vue.prototype.$nav = nav)
+  Vue.use(VueMarkdown)
+  Vue.use(router || Router)
 
   // analytics
   track(site.ga)
 
-  // config
-  Vue.use(Vue => Vue.prototype.$site = site)
-  Vue.use(Vue => Vue.prototype.$menu = menu)
+  // components
+  Vue.component('menu-group', MenuGroup)
+  Vue.component('vue-markdown', VueMarkdown)
+  Object
+    .keys(components)
+    .forEach(key => Vue.component(key, components[key]))
 
-  // tooling
-  Vue.config.devtools = true
-
-  // app
-  window.store = store
-  window.app = new Vue({
+  // final config
+  const vueOptions = {
     el: '#app',
-    router: makeRouter(menu),
+    router: makeRouter(nav, Router),
     store,
     template: '<App/>',
     components: { App }
-  })
+  }
 
+  // setup
+  if (!demo) {
+    console.log('returning vueOptions')
+    options.vueOptions = vueOptions
+    return vueOptions
+  }
+
+  // app
+  window.store = store
+  window.app = new Vue(vueOptions)
 }
 
-Object.assign(demo, helpers)
-export default demo
+// export
+function demo (options) {
+  return install(Vue, options, true)
+}
+
+export default { name: 'demo', install }
 export {
+  demo,
   item,
   route,
   redirect,
