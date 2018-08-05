@@ -1,4 +1,4 @@
-@import "~bulma/sass/utilities/mixins";
+@import "../../node_modules/bulma/sass/utilities/mixins";
 @import "variables";
 
 aside {
@@ -20,8 +20,9 @@ aside {
       height: 50px;
       left: -60px;
       top: -8px;
-      background: url(../assets/favicon.png);
       background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
       content: ' ';
 
       display: none;

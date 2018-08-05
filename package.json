@@ -2,11 +2,31 @@
   "name": "js-demo",
   "description": "JS Demo - A starter project to demo JS libraries",
   "version": "1.0.2",
-  "author": "Dave Stewart",
+  "main": "dist/js-demo.js",
+  "module": "dist/js-demo.esm.js",
+  "jsnext:main": "dist/js-demo.esm.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "demo": "cross-env NODE_ENV=production:demo webpack --progress --hide-modules",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "rollup -c build/rollup.js -w",
+    "build": "rollup -c build/rollup.js",
+    "docs": "node-sass docs/assets/scss -o docs/assets/css -w docs/assets/scss/**/*.scss & docsify serve docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dave Stewart <dave@davestewart.io>",
+  "homepage": "https://github.com/davestewart/vuex-pathify#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davestewart/vuex-pathify.git"
+  },
+  "keywords": [
+    "vuex",
+    "store"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davestewart/vuex-pathify/issues"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -15,33 +35,19 @@
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.10",
     "marked": "^0.3.19",
-    "vue": "^2.5.16",
+    "vue": "^2.5.17",
     "vue-markdown": "^2.2.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "copy-webpack-plugin": "^4.5.1",
-    "cross-env": "^5.1.5",
-    "css-loader": "^0.28.11",
-    "file-loader": "^1.1.4",
-    "node-sass": "^4.9.2",
-    "raw-loader": "^0.5.1",
-    "sass-loader": "^6.0.6",
-    "uglifyjs-webpack-plugin": "^1.2.5",
-    "vue-loader": "^13.7.2",
-    "vue-markdown-loader": "^2.4.1",
-    "vue-template-compiler": "^2.5.16",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "node-sass": "^4.9.0",
+    "rollup-plugin-buble": "^0.19.1",
+    "rollup-plugin-commonjs": "^8.4.1",
+    "rollup-plugin-license": "^0.6.0",
+    "rollup-plugin-scss": "^0.4.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "rollup-plugin-vue": "^4.3.2",
+    "vue-template-compiler": "^2.5.16"
   }
 }
