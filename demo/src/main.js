@@ -1,16 +1,13 @@
-import demo, { route, redirect, list, page, code } from 'js-demo/dist'
+// import
+import plugin, { demo, route, redirect, list, page, code } from 'js-demo/dist'
 
-// pages
-// examples
-import Vue from 'vue'
+// assets
+import 'js-demo/dist/styles.css'
 
-// helpers
-console.log({route, redirect, list, page, code})
+// assets
+import './assets/styles.scss'
+import './assets/logo.svg'
 
-// console.log(demo.helpers, route)
-
-
-// const { route, redirect, list, page, code } = demo.helpers
 // pages
 import Home from './pages/Home'
 import Components from './pages/Components'
@@ -22,8 +19,6 @@ import Basic from './examples/BasicExample'
 import Component from './examples/ComponentExample'
 import Fieldset from './examples/FieldsetExample'
 
-import store from './store'
-
 // site
 const site = {
   name: 'js demo',
@@ -34,19 +29,20 @@ const site = {
   // ga:   'UA-603607-XX',
 }
 
-const navigation = [
+// navigation
+const nav = [
   // route creates a route without creating a menu item
   route('/', Home),
 
   // list creates a list
   list('', 'Features', [
-    // you can use page() to create items with no icon
+    // use page() to create items with no icon
     page('markdown', 'Markdown', Markdown),
     page('components', 'Components', Components),
   ]),
 
   list('examples', 'Examples', [
-    // you can use code() to create items with an icon
+    // use code() to create items with an icon
     code('basic', 'Basic', Basic),
     code('component', 'Component', Component),
     code('fieldset', 'Fieldset', Fieldset),
@@ -64,14 +60,13 @@ const navigation = [
   ]),
 ]
 
-demo(site, navigation, store)
+// store
+import store from './store'
 
-/*
-const App = { render (h) { return h('div', 'hello!') } }
+// start demo!
+const options = {site, nav, store}
+demo(options)
 
-window.app = new Vue({
-  el: '#app',
-  template: '<App/>',
-  components: { App }
-})
-*/
+// import Vue from 'vue'
+// Vue.use(plugin, options)
+// new Vue(options.vueOptions)
