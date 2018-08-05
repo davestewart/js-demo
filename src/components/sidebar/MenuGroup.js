@@ -1,5 +1,5 @@
-import MenuLabel from './MenuLabel'
-import MenuList from './MenuList'
+import MenuLabel from './MenuLabel.vue'
+import MenuList from './MenuList.vue'
 
 export default {
   functional: true,

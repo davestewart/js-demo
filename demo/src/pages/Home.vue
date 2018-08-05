@@ -3,10 +3,11 @@
   <div class="content home">
 
     <header class="banner">
+      <!--
       <img src="../../core/assets/logo-image.png" width="350">
 
-      <!-- delete the next line to remove the image -->
       <img src="../../core/assets/logo-text.png" width="350">
+      delete the next line to remove the image -->
 
       <!-- uncomment this block to show the text version
       <h1>js demo</h1>

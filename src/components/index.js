@@ -1,13 +1,13 @@
 import Vue from 'vue'
 
-import UiModal from './ui/UiModal'
-import UiInput from './ui/UiInput'
-import UiButton from './ui/UiButton'
-import UiSelect from './ui/UiSelect'
-import UiIcon from './ui/UiIcon'
+import UiModal from './ui/UiModal.vue'
+import UiInput from './ui/UiInput.vue'
+import UiButton from './ui/UiButton.vue'
+import UiSelect from './ui/UiSelect.vue'
+import UiIcon from './ui/UiIcon.vue'
 
-import ViewCode from './nav/EditCode'
-import ViewDocs from './nav/ViewDocs'
+import ViewCode from './nav/EditCode.vue'
+import ViewDocs from './nav/ViewDocs.vue'
 
 import Markdown from './content/Markdown'
 import MarkdownPage from './content/MarkdownPage'

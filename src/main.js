@@ -1,38 +1,56 @@
 import Vue from 'vue'
-import VueMarkdown from 'vue-markdown'
+import VueMarkdown from 'vue-markdown/dist/vue-markdown'
 
 // assets
-import './core/assets/favicon.png'
-import './core/styles/index.scss'
+import './styles/index.scss'
+import './assets/favicon.png'
+import './components'
 
 // app
-import './core/components'
-import App from './core/App'
-import router from './core/router'
+import App from './App.vue'
+import makeRouter from './router'
+import * as helpers from './router/helpers'
+import { item, route, redirect, list, page, code } from './router/helpers'
 
 // config
-import './app/config/main'
-import store from './app/store'
-import config from './app/config/site'
-
-// analytics
-import track from './core/vendor/ga'
-track(config.ga)
-
-// config
-Vue.use(Vue => Vue.prototype.$site = config)
-Vue.config.devtools = true
+import track from './vendor/ga'
 
 // plugins
 Vue.use(VueMarkdown)
 Vue.component('vue-markdown', VueMarkdown)
 
-// app
-window.store = store
-window.app = new Vue({
-  el: '#app',
-  router,
-  store,
-  template: '<App/>',
-  components: { App }
-})
+// export
+function demo (site = {}, menu = {}, store = {}) {
+
+  // analytics
+  track(site.ga)
+
+  // config
+  Vue.use(Vue => Vue.prototype.$site = site)
+  Vue.use(Vue => Vue.prototype.$menu = menu)
+
+  // tooling
+  Vue.config.devtools = true
+
+  // app
+  window.store = store
+  window.app = new Vue({
+    el: '#app',
+    router: makeRouter(menu),
+    store,
+    template: '<App/>',
+    components: { App }
+  })
+
+}
+
+Object.assign(demo, helpers)
+export default demo
+export {
+  item,
+  route,
+  redirect,
+  list,
+  page,
+  code
+}
