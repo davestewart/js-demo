@@ -1,7 +1,7 @@
 {
   "name": "js-demo",
   "description": "JS Demo - A starter project to demo JS libraries",
-  "version": "1.0.2",
+  "version": "2.0.0-alpha",
   "main": "dist/js-demo.js",
   "module": "dist/js-demo.esm.js",
   "jsnext:main": "dist/js-demo.esm.js",
