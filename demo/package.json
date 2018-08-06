@@ -9,6 +9,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "@davestewart/js-demo": "^2.0.0",
     "axios": "^0.18.0",
     "bulma": "^0.6.2",
     "codesandbox-api": "0.0.18",
