@@ -1,10 +1,10 @@
 {
   "name": "@davestewart/js-demo",
   "description": "JS Demo - A starter project to demo JS libraries",
-  "version": "2.0.1",
-  "main": "dist/js-demo.js",
-  "module": "dist/js-demo.esm.js",
-  "jsnext:main": "dist/js-demo.esm.js",
+  "version": "2.0.2",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "jsnext:main": "dist/index.esm.js",
   "files": [
     "dist/*"
   ],
