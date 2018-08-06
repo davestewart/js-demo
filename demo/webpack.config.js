@@ -1,8 +1,8 @@
+var fs = require('fs')
 var path = require('path')
 var webpack = require('webpack')
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
-
 
 var src = path.resolve(__dirname, './src')
 var dist = path.resolve(__dirname, './dist')
@@ -107,6 +107,12 @@ module.exports = {
     hints: false
   },
   devtool: '#eval-source-map'
+}
+
+const lib = path.resolve(__dirname, '../dist')
+if (fs.existsSync(lib)) {
+  console.log('Loading local js-demo...')
+  module.exports.resolve.alias['js-demo'] = lib
 }
 
 if (process.env.NODE_ENV === 'production') {
