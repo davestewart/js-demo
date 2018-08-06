@@ -1,8 +1,8 @@
 // import
-import plugin, { demo, route, redirect, list, page, code } from 'js-demo'
+import plugin, { demo, route, redirect, list, page, code } from '@davestewart/js-demo'
 
 // assets
-import 'js-demo/styles.css'
+import '@davestewart/js-demo/styles.css'
 
 // assets
 import './assets/styles.scss'

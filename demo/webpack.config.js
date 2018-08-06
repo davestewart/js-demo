@@ -112,7 +112,7 @@ module.exports = {
 const lib = path.resolve(__dirname, '../dist')
 if (fs.existsSync(lib)) {
   console.log('Loading local js-demo...')
-  module.exports.resolve.alias['js-demo'] = lib
+  module.exports.resolve.alias['@davestewart/js-demo'] = lib
 }
 
 if (process.env.NODE_ENV === 'production') {

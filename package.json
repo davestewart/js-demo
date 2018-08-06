@@ -1,5 +1,5 @@
 {
-  "name": "js-demo",
+  "name": "@davestewart/js-demo",
   "description": "JS Demo - A starter project to demo JS libraries",
   "version": "2.0.0",
   "main": "dist/js-demo.js",
