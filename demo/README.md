@@ -1,5 +1,5 @@
-<p align="center"><img src="demo/src/assets/logo.svg" width="50%"></p>
-<p align="center"><img src="demo/src/assets/title.svg" width="50%"></p>
+<p align="center"><img src="src/core/assets/logo-image.png" width="60%"></p>
+<p align="center"><img src="src/core/assets/logo-text.png" width="60%"></p>
 
 # js demo
 

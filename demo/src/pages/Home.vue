@@ -3,14 +3,11 @@
   <div class="content home">
 
     <header class="banner">
-      <img src="../../core/assets/logo-image.png" width="350">
-
-      <!-- delete the next line to remove the image -->
-      <img src="../../core/assets/logo-text.png" width="350">
-
-      <!-- uncomment this block to show the text version
-      <h1>js demo</h1>
-      -->
+      <img src="../assets/logo.svg">
+      <div class="logo">
+        <h1>js demo</h1>
+        <h2>a starter project to demo JS libraries</h2>
+      </div>
     </header>
 
     <h3>Introduction</h3>
@@ -81,3 +78,43 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .banner {
+    text-align: center;
+
+    img {
+      width: 260px;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      position: relative;
+      display: inline-block;
+      margin: auto;
+      text-align: center;
+
+      font-size: 70px;
+
+      > * {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 1em;
+        white-space: nowrap;
+        line-height: 1em;
+        margin: 0 !important;
+      }
+
+      h2 {
+        font-size: 22%;
+        font-weight: 500;
+        position: absolute;
+        bottom: -30%;
+        right: 5%;
+      }
+    }
+  }
+
+</style>

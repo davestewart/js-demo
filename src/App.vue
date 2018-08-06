@@ -1,14 +1,17 @@
 <template>
   <div id="app" class="container">
+
     <aside>
       <div class="sidebar-container">
         <sidebar />
       </div>
     </aside>
+
     <main class="main">
       <router-view :key="$route.path"/>
     </main>
-    <a target="_blank" :href="$site.repo" class="github-corner" aria-label="View source on Github">
+
+    <a v-if="$site.repo" target="_blank" :href="$site.repo" class="github-corner" aria-label="View source on Github">
       <svg width="80" height="80" viewBox="0 0 250 250"
            style="fill:#24A4C1; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -20,25 +23,19 @@
           fill="currentColor" class="octo-body"></path>
       </svg>
     </a>
+
   </div>
 </template>
 
 <script>
-import Sidebar from './components/sidebar/Sidebar'
-import Home from '../app/pages/Home'
+import Sidebar from './components/sidebar/Sidebar.vue'
 
 export default {
 
   components: {
-    Home,
     Sidebar,
-  },
-
-  data () {
-    return {
-      msg: 'JS Demo'
-    }
   }
+
 }
 </script>
 

@@ -1,5 +1,4 @@
 import { route } from './helpers'
-import config from '@/app/config/site'
 
 export function makeMenu (items, prefix = '/') {
   return items.map(item => {
@@ -35,7 +34,7 @@ export function afterRoute () {
   const route = location.hash
   const link = document.querySelector(`a[href="${route}"]`)
   if (link) {
-    document.title = `${config.name} / ${link.innerText}`
+    // document.title = `${config.name} / ${link.innerText}`
   }
 
   // scripts
