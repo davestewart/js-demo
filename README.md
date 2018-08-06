@@ -5,6 +5,28 @@
 
 > A starter project to demo JS libraries
 
+## Overview
+
+JS Demo is a small start project to demo JS libs.
+
+It scaffolds a lightweight layout, navigation and theme based on Vue and Bulma, allowing you to concentrate on setting up pages to demo your library's features.
+
+
+## Installation
+
+Clone to the `demo/` folder of your local repository, under `demo/`.
+
+Then, install and run:
+
+```bash
+cd demo
+npm install
+npm run dev
+```
+
+View at [http://localhost:8080](http://localhost:8080)
+
+
 ## Features
 
 Layout
@@ -64,18 +86,3 @@ Editable demo:
 Live site:
 
 - [js-demo.netlify.com](https://js-demo.netlify.com)
-
-## Usage
-
-Clone to the `demo/` folder of your local repository.
-
-Then, install and run:
-
-```bash
-npm install
-npm run dev
-```
-
-View at [http://localhost:8080](http://localhost:8080)
-
-
