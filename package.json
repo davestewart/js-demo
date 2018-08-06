@@ -1,7 +1,7 @@
 {
   "name": "@davestewart/js-demo",
   "description": "JS Demo - A starter project to demo JS libraries",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/js-demo.js",
   "module": "dist/js-demo.esm.js",
   "jsnext:main": "dist/js-demo.esm.js",
@@ -11,14 +11,13 @@
   "scripts": {
     "dev": "rollup -c build/rollup.js -w",
     "build": "rollup -c build/rollup.js",
-    "docs": "node-sass docs/assets/scss -o docs/assets/css -w docs/assets/scss/**/*.scss & docsify serve docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dave Stewart <dave@davestewart.io>",
-  "homepage": "https://github.com/davestewart/vuex-pathify#readme",
+  "homepage": "https://github.com/davestewart/js-demo#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davestewart/vuex-pathify.git"
+    "url": "git+https://github.com/davestewart/js-demo.git"
   },
   "keywords": [
     "vuex",
@@ -26,7 +25,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davestewart/vuex-pathify/issues"
+    "url": "https://github.com/davestewart/js-demo/issues"
   },
   "dependencies": {
     "axios": "^0.18.0",
